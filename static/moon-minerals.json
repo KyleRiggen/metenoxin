@@ -1,14 +1,30 @@
 [
   {
-    "id": 1,
-    "name": "Leanne Graham",
-    "username": "Bret",
-    "email": "[email protected]"
+    "region": "Aridia",
+    "moon": "Sakht III - Moon 1",
+    "composition": {
+      "ore1": {
+        "name": "Coesite",
+        "percentage": 0.542439878
+      },
+      "ore2": {
+        "name": "Zeolites",
+        "percentage": 0.4575600922
+      }
+    }
   },
   {
-    "id": 2,
-    "name": "Ervin Howell",
-    "username": "Antonette",
-    "email": "[email protected]"
+    "region": "Aridia",
+    "moon": "Sakht IV - Moon 1",
+    "composition": {
+      "ore1": {
+        "name": "Bitumens",
+        "percentage": 0.2673034966
+      },
+      "ore2": {
+        "name": "Coesite",
+        "percentage": 0.7326965332
+      }
+    }
   }
 ]

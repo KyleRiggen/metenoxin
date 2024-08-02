@@ -1,35 +1,39 @@
 <script lang="ts">
-	interface DataItem {
-		id: number;
-		name: string;
-		username: string;
-		email: string;
-	}
+	export let data: [
+		{
+			region: string;
+			moon: string;
+			composition: {
+				ore1: { name: string; percentage: number };
+				ore2: { name: string; percentage: number };
+			};
+		}
+	];
 
-	export let data: { data: { id: number; name: string; username: string; email: string }[] };
-	export let data2: DataItem[] = [];
-	console.log('Received data:', JSON.stringify(data, null, 2));
+	// export let data: any;
 
-	const tableData = data.data; // Adjust this based on the actual structure
+	console.log(data);
+	const moonData = data.data;
+	console.log(moonData);
 </script>
 
-{#if tableData && tableData.length > 0}
+{#if moonData.length > 0}
 	<table>
 		<thead>
 			<tr>
-				<th>ID</th>
-				<th>Name</th>
-				<th>Username</th>
-				<th>Email</th>
+				<th>Region</th>
+				<th>Moon</th>
+				<th>Ore 1</th>
+				<th>Ore 2</th>
 			</tr>
 		</thead>
 		<tbody>
-			{#each tableData as item}
+			{#each moonData as item}
 				<tr>
-					<td>{item.id}</td>
-					<td>{item.name}</td>
-					<td>{item.username}</td>
-					<td>{item.email}</td>
+					<td>{item.region}</td>
+					<td>{item.moon}</td>
+					<td>{item.composition.ore1.name} ({item.composition.ore1.percentage}%)</td>
+					<td>{item.composition.ore2.name} ({item.composition.ore2.percentage}%)</td>
 				</tr>
 			{/each}
 		</tbody>

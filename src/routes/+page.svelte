@@ -1,5 +1,9 @@
 <script>
 	// https://wiki.eveuniversity.org/Moon_mining
+	// https://evetycoon.com/api/v1/market/stats/10000002/81826
+	// https://evemarketbrowser.com/region/10000002/type/81826
+
+	// https://evetycoon.com/api/v1/market/stats/10000002/81826
 </script>
 
 <table cellpadding="5" cellspacing="1" border="1">
